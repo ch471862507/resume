@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: #808080;
+				display: inline-block;
+				height: 30px;
+				width: 70px;
+				margin:3px;
+				line-height: 30px;
+				border: 1px solid red;
+				background-color: red;
+				color: white;
+				border-radius: 4px;
+			}
+			#total{
+				width: 500px;
+				height:700px;
+				margin: 0 auto;
+				position: relative;
+			}
+			#first,#second,#third,#four,#five,#six,#seven{
+				width: 500px;
+				height: 560px;
+				border: 1px solid red;
+				position: absolute;
+			}
+			#first{
+				background-image:url(img/1.jpg);
+				display: block;
+			}
+			#second{
+				background-image: url(img/bg.jpg);
+				display: none;
+			}
+			#third{
+				background-image: url(img/bg.jpg);
+				display: none;
+			}
+			#four{
+				background-image: url(img/bg.jpg);
+				display: none;
+			}
+			#five{
+				background-image: url(img/bg.jpg);
+				display: none;
+			}
+			#six{
+				background-image: url(img/bg.jpg);
+				display: none;
+			}
+			#seven{
+				background-image: url(img/bg.jpg);
+				display: none;
+			}
+			a:hover{
+				color: black;
+				transform: scale(1.2);
+			}
+		
+			a:hover~#first{
+				display: none;
+			}
+		    .a1:hover~#second,.a1:hover~#second div{
+				display: block;
+			}
+			.a2:hover~#third,.a2:hover~#third div{
+				display: block;
+			}
+			.a3:hover~#four,.a3:hover~#four div{
+				display: block;
+			}
+			.a4:hover~#five,.a4:hover~#five div{
+				display: block;
+			}
+			.a5:hover~#six,.a5:hover~#six div{
+				display: block;
+			}
+			.a6:hover~#seven,.a6:hover~#seven div{
+				display: block;
+			}
+			#second div{
+				display:none;
+			}
+			#third div{
+				display:none;
+			}
+			#four div{
+				display:none;
+			}
+			#five div{
+				display:none;
+			}
+			#six div{
+				display:none;
+			}
+			#seven div{
+				display: none;
+			}
+			h3{
+				text-align: center;
+				font-size: 26px;
+				line-height: 60px;
+				font-weight: normal;
+			}
+			h4{
+				text-align: center;
+				font-size: 24px;
+				font-style: oblique;
+				line-height: 60px;
+				margin-top: 30px;
+				color: rgba(0,0,0,.6);
+			}
+			.photo{
+				margin: 0 auto;
+				width: 160px;
+			}
+			.message{
+				margin: 0 auto;
+				width: 480px;
+				margin-top:20px;
+				
+			}
+			.message ul li{
+				font-size: 16px;
+				display: inline-block;
+				width: 200px;
+				float: left;
+				margin-left: 20px;
+			}
+			.intention{
+				width: 220px;
+				height: 220px;
+				margin: 0 auto;
+				margin-top: 50px;
+				border: 1px solid salmon;
+				background-color: #FAEBD7;
+				border-radius: 50%;
+				text-align: center;
+				}
+				.intention ul{
+					margin-top: 40px;
+				}
+			.appraise{
+				width: 460px;
+				margin: 0 auto;
+				background-color: antiquewhite;
+				border: 1px solid sandybrown;
+				border-radius: 20px;
+				margin-top:30px;
+			}
+			.appraise p{
+				text-indent: 2em;
+				color:rgba(0,0,0,0.8);
+				line-height: 24px;
+			}
+			.experience{
+				width: 320px;
+				line-height: 36px;
+				margin: 0 auto;
+				background-color: antiquewhite;
+				border: 1px solid sandybrown;
+				border-radius: 10px;
+				margin-top: 50px;
+			}
+			.education{
+				width: 320px;
+				height: 160px;
+				line-height: 36px;
+				margin: 0 auto;
+				background-color: antiquewhite;
+				border: 1px solid sandybrown;
+				text-align: center;
+				border-radius: 0 0 160px 160px;
+				margin-top: 50px;
+			}
+			.train{
+				width: 200px;
+				height: 200px;
+				line-height: 36px;
+				margin: 0 auto;
+				background-color: antiquewhite;
+				border: 1px solid sandybrown;
+				border-radius: 0 0 200px 0;
+				margin-top: 50px;
+			}
+			.train ul{
+				margin-top:14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<div id="total">
+		<h3>我的简历</h3>
+		<a class="a1" href="#">个人资料</a>
+		<a class="a2" href="#">求职意向</a>
+		<a class="a3" href="#">自我评价</a>
+		<a class="a4" href="#">工作经历</a>
+		<a class="a5" href="#">教育经历</a>
+		<a class="a6" href="#">培训经历</a>
+		<div id="first"></div>
+		<div id="second">
+			<div>
+			<h4>个人资料</h4>
+			<div class="photo">
+			<img src="img/chen.jpg" />
+			</div>
+			<div class="message">
+				<ul>
+					<li>姓名：陈浩</li>
+					<li>性别：男</li>
+					<li>年龄：28</li>
+					<li>学历：本科</li>
+					<li>电话：18724091817</li>
+					<li>邮箱：47186207@qq.com</li>
+					<li>毕业院校：南通大学</li>
+					<li>专业：软件工程</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div id="third">
+			<div><h4>求职意向</h4></div>
+			<div class="intention" >
+				<ul>
+					<li><strong>工作性质：</strong>全职</li>
+					<li><strong>工作地区：</strong>扬州</li>
+					<li><strong>期望职业：</strong>软件工程师</li>
+					<li><strong>期望月薪：</strong><em>4000~5000/月</em></li>
+					<li><strong>目前状况：</strong>离职，可立即上岗</li>
+				</ul>
+			</div>
+		</div>
+		<div id="four">
+			<div><h4>自我评价</h4></div>	
+			<div class="appraise">
+				<p>
+						一直以来本人对待工作积极努力，认真负责，团队意识强，时间观念强，有较强的适应能力和协调能
+                                                力。毕业后一直在上汽大众汽车有限公司仪征分公司冲压车间工作，主要从事冲压件质量的检测，在这段
+                                                工作经历中，锻炼出了吃苦耐劳的精神和善于发现问题并及时解决的能力！同时我也是一个喜欢接受和学
+                                                 习新事物的人也是一个喜欢挑战自我的人，一直以来车间工作的一层不变让我觉得缺乏一点激情和期望，
+                                                 所以我下定决心重新选择工作的方向，而选择软件是该行业未来的前景很好，工作更具有技术性和挑战性，
+                                                 而且在一段时间的接触学习中发现，对于遇到的难题能够激发自己钻研和不断学习！还有一点我认为自己
+                                                自学能力还比较强，也有较强的抗压能力，相信能够很快的适应新的工作内容和环境！
+					</p>
+			</div>
+		</div>	    
+		<div id="five"><div><h4>工作经历</h4></div>
+		<div class="experience">
+		<ul>
+			<li><strong>工作时间：</strong><em>2013.03~2017.07</em></li>
+		    <li><strong>&nbsp;&nbsp;公&nbsp;&nbsp;&nbsp;司&nbsp;&nbsp;:</strong>上汽大众汽车有限公司仪征分公司</li>
+			<li><strong>行业类别：</strong>汽车制造</li>
+			<li><strong>职位月薪：</strong><em>6000~7000</em>/月</li>	
+			<li><strong>工作描述：</strong>主要负责冲压件质量的检测</li>	
+		</ul>
+		</div>
+		</div>
+		     
+		<div id="six"><div> <h4>教育经历</h4></div>
+		<div class="education">
+		<ul>
+			<li><strong>时间：</strong><em>2008.09~2012.06</em></li>
+			<li><strong>学校：</strong>南通大学</li>
+			<li><strong>专业：</strong>软件工程</li>
+			<li><strong>学历：</strong>本科</li>
+		</ul></div>
+		 </div>
+		<div id="seven"><div><h4>培训经历</h4></div>
+		<div class="train">
+			<ul>	
+				<li><strong>培训时间：</strong>2017.08~至今</li>
+				<li><strong>培训机构：</strong>北大青鸟</li>
+				<li><strong>培训课程：</strong>java学士后</li>	
+				<li><strong>培训地点：</strong>南京</li>
+			</ul>
+		</div></div>
+		     
+		</div>
+		</div>
+	</body>
+</html>
